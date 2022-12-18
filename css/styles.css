@@ -10,6 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--title-color);
+  background-color: var(--banner-color);
 }
 
 .list {
@@ -38,7 +39,7 @@ body {
 }
 
 .title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -63,15 +64,15 @@ body {
 
 .visually-hidden {
   position: absolute;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  overflow: hidden;
   border: 0;
   padding: 0;
-  writing-mode: nowrap;
-  clip-path: inset (100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /*--------------------------WEBSTUDIO---------------------*/
@@ -111,7 +112,7 @@ body {
   background-color: var(--title-color);
 }
 .slogan-banner {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
   text-align: center;
@@ -134,7 +135,7 @@ body {
   background-color: var(--banner-color);
 }
 .skills-after-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -150,7 +151,7 @@ body {
 }
 
 .team-members-name {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
@@ -159,6 +160,10 @@ body {
 .team-members-position {
   text-align: center;
   color: var(--text-color);
+}
+
+.team-members-item {
+  background-color: var(--banner-color);
 }
 
 /*-----FOOTER--------*/
@@ -176,12 +181,8 @@ body {
 /*--------------------------PORTFOLIO---------------------*/
 
 /*----PORTFOLIO-BUTTONS----*/
-.portfolio {
-  background-color: var(--logo-color);
-}
+
 .portfolio-button {
-  display: flex;
-  align-items: center;
   text-align: center;
   color: var(--accent-color);
   background-color: var(--logo-color);
@@ -203,6 +204,12 @@ body {
 }
 
 .portfolio-images-work {
-  font-weight: 400;
   color: var(--text-color);
+}
+
+.portfolio-images-title {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
 }
