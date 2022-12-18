@@ -9,7 +9,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
+  color: var(--title-color);
 }
 
 .list {
@@ -24,7 +24,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-color);
 }
 
 .logo {
@@ -32,11 +32,9 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .title {
@@ -64,42 +62,47 @@ body {
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    writing-mode: nowrap;
-    clip-path: inset (100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  writing-mode: nowrap;
+  clip-path: inset (100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
+/*--------------------------WEBSTUDIO---------------------*/
 /*----------HEADER---------*/
 
 .header {
   background-color: var(--banner-color);
 }
 .studio {
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .header-link {
-  font-weight: 500;
-  color: #434455;
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .header-link:hover,
 .header-link:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .header-email:hover,
 .header-email:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .header-telephon:hover,
 .header-telephon:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 /*-----SLOGAN--------*/
@@ -114,21 +117,21 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--banner-color);
-  background-color: #2e2f42;
+  background-color: var(--title-color);
 }
 .slogan-button {
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--banner-color);
+  background-color: var(--accent-color);
 }
 
 .slogan-button:hover,
 .slogan-button:focus {
-  color: #ffffff;
+  color: var(--banner-color);
   background-color: #404bbf;
 }
 /*-----SKILLS--------*/
 .skills {
-  background-color: #ffffff;
+  background-color: var(--banner-color);
 }
 .skills-after-title {
   font-weight: 500;
@@ -143,7 +146,7 @@ body {
 
 /*-----TEAM--------*/
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--logo-color);
 }
 
 .team-members-name {
@@ -164,29 +167,29 @@ body {
 }
 
 .footter-studio {
-  color: #f4f4fd;
+  color: var(--logo-color);
 }
 .footer-text {
-  color: #f4f4fd;
+  color: var(--logo-color);
 }
 
 /*--------------------------PORTFOLIO---------------------*/
 
 /*----PORTFOLIO-BUTTONS----*/
 .portfolio {
-  background-color: #f4f4fd;
+  background-color: var(--logo-color);
 }
 .portfolio-button {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
+  color: var(--accent-color);
+  background-color: var(--logo-color);
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--banner-color);
+  background-color: var(--accent-color);
 }
 
 /*----PORTFOLIO-IMAGES----*/
@@ -201,5 +204,5 @@ body {
 
 .portfolio-images-work {
   font-weight: 400;
-  color: #434455;
+  color: var(--text-color);
 }
